@@ -67,7 +67,7 @@ export function ProductPreview({ className }) {
                   <LineChart
                     height={190}
                     series={[{ id: 'vn', label: 'VN-Index', color: '#f3f3f4', data: history, area: true }]}
-                    subSeries={{ label: 'Biến động', color: '#a78bfa', data: history.map((d) => ({ t: d.t, value: d.volatility })), format: (v) => `${v.toFixed(1)}%`, height: 34 }}
+                    subSeries={{ label: 'Biến động', color: '#a78bfa', data: history.map((d) => ({ t: d.t, value: d.volatility })), format: (v) => formatPercent(v, { sign: false, digits: 1 }), height: 34 }}
                     yFormat={(v) => formatPoint(v)}
                     xFormat={(t) => new Date(t).toLocaleDateString('vi-VN', { month: 'short', year: '2-digit' })}
                     tooltipTitle={(t) => new Date(t).toLocaleDateString('vi-VN')}

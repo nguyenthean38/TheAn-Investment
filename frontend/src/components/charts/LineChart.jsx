@@ -1,5 +1,6 @@
 import { useId, useMemo, useState } from 'react'
 import { cn } from '@/utils/cn'
+import { formatPercent } from '@/utils/format'
 import { useElementSize, niceTicks } from './utils'
 
 /**
@@ -134,7 +135,7 @@ export function LineChart({
                 <line x1={4} x2={4 + innerW} y1={y(tv)} y2={y(tv)} stroke="rgb(255 255 255 / 0.05)" />
                 {showYAxis && (
                   <text x={width - right + 10} y={y(tv) + 4} className="num fill-faint text-[10.5px]">
-                    {normalize ? `${tv > 0 ? '+' : ''}${tv.toFixed(Math.abs(max - min) < 6 ? 1 : 0)}%` : yFormat(tv)}
+                    {normalize ? formatPercent(tv, { digits: Math.abs(max - min) < 6 ? 1 : 0 }) : yFormat(tv)}
                   </text>
                 )}
               </g>
@@ -168,7 +169,7 @@ export function LineChart({
                   <g transform={`translate(${width - right + 4},${y(last.v) - 9})`}>
                     <rect width={right - 6} height={18} rx={5} fill={s.color} fillOpacity="0.16" />
                     <text x={(right - 6) / 2} y={12.5} textAnchor="middle" className="num text-[10.5px] font-semibold" fill={s.color}>
-                      {normalize ? `${last.v > 0 ? '+' : ''}${last.v.toFixed(1)}%` : yFormat(last.v)}
+                      {normalize ? formatPercent(last.v, { digits: 1 }) : yFormat(last.v)}
                     </text>
                   </g>
                 )}
@@ -220,7 +221,7 @@ export function LineChart({
                   <span className="h-3 w-[3px] rounded-full" style={{ background: s.color }} />
                   {s.label}
                 </span>
-                <span className="num font-semibold text-fg">{normalize ? `${p.v > 0 ? '+' : ''}${p.v.toFixed(2)}%` : yFormat(p.raw)}</span>
+                <span className="num font-semibold text-fg">{normalize ? formatPercent(p.v) : yFormat(p.raw)}</span>
               </div>
             )
           })}

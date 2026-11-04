@@ -22,7 +22,7 @@ export function AllocationDonut({ items, total, centerLabel, centerValue, size =
   const active = hover != null ? arcs[hover] : null
 
   return (
-    <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-center">
+    <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-center xl:flex-col">
       <div className="relative shrink-0" style={{ width: size, height: size }}>
         <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} className="-rotate-90" role="img" aria-label="Phân bổ danh mục theo ngành">
           <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="var(--color-line)" strokeWidth={16} />

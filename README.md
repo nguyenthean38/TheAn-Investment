@@ -4,6 +4,24 @@
 
 > ⚠️ Toàn bộ dữ liệu là **dữ liệu mô phỏng** dùng để trình diễn giao diện, không phải khuyến nghị đầu tư. Tên công ty chứng khoán và nguồn tin trong ứng dụng đều là tên hư cấu.
 
+![Trang Tổng quan](docs/screenshots/02-home.jpg)
+
+## Ảnh giao diện
+
+| Trang giới thiệu | Bảng lệnh ⌘K |
+|---|---|
+| ![Trang giới thiệu](docs/screenshots/01-landing.jpg) | ![Bảng lệnh](docs/screenshots/06-command-palette.jpg) |
+| **Trang cổ phiếu** | **Khuyến nghị & giá mục tiêu** |
+| ![Trang cổ phiếu](docs/screenshots/03-stock.jpg) | ![Khuyến nghị](docs/screenshots/04-stock-analysts.jpg) |
+| **Báo cáo tài chính** | **Phân tích vĩ mô** |
+| ![Báo cáo tài chính](docs/screenshots/05-stock-financials.jpg) | ![Phân tích](docs/screenshots/07-analysis.jpg) |
+| **Danh sách theo dõi** | **Danh mục nắm giữ** |
+| ![Danh sách theo dõi](docs/screenshots/08-portfolio.jpg) | ![Danh mục nắm giữ](docs/screenshots/09-holdings.jpg) |
+| **Lịch sự kiện** | **Bộ lọc cổ phiếu** |
+| ![Lịch sự kiện](docs/screenshots/10-calendar.jpg) | ![Bộ lọc](docs/screenshots/11-screener.jpg) |
+| **So sánh biểu đồ** | **Giao diện điện thoại** |
+| ![So sánh](docs/screenshots/12-compare.jpg) | <img src="docs/screenshots/13-mobile-home.jpg" width="48%" alt="Điện thoại – Tổng quan" /> <img src="docs/screenshots/14-mobile-stock.jpg" width="48%" alt="Điện thoại – Cổ phiếu" /> |
+
 ## Tính năng
 
 | Màn hình | Nội dung |

@@ -295,7 +295,7 @@ function TrendCharts({ rows }) {
       <Card className="p-5">
         <h3 className="ds-h3">Xu hướng biên lợi nhuận</h3>
         <p className={cn('mb-3 text-[12px]', marginTrend >= 0 ? 'text-up' : 'text-down')}>{marginTrend >= 0 ? 'Biên lợi nhuận đang mở rộng' : 'Biên lợi nhuận đang thu hẹp'}</p>
-        <LineChart height={236} series={marginSeries} yFormat={(v) => `${v.toFixed(1)}%`} xFormat={(i) => recent[i]?.period ?? ''} />
+        <LineChart height={236} series={marginSeries} yFormat={(v) => formatPercent(v, { sign: false, digits: 1 })} xFormat={(i) => recent[i]?.period ?? ''} />
       </Card>
     </div>
   )
@@ -320,7 +320,7 @@ function CompareModal({ open, onClose, rows, keys, period }) {
             height={320}
             series={series}
             normalize={normalize}
-            yFormat={(v) => (unit === '%' ? `${v.toFixed(1)}%` : formatNumber(v))}
+            yFormat={(v) => (unit === '%' ? formatPercent(v, { sign: false, digits: 1 }) : formatNumber(v))}
             xFormat={(i) => rows[i]?.period ?? ''}
           />
           <div className="mt-4 overflow-x-auto">
