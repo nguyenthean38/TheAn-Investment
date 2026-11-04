@@ -2,6 +2,8 @@
 
 **Nhịp** là ứng dụng web nghiên cứu cổ phiếu Việt Nam, giao diện tối, tối ưu cho bàn phím. Mỗi sáng người dùng nhận bản tin thị trường do AI tổng hợp, theo dõi danh mục, xem lịch sự kiện doanh nghiệp, đọc báo cáo tài chính, xem khuyến nghị của các công ty chứng khoán và lọc cổ phiếu, tất cả trong một nơi.
 
+🔗 **Demo:** https://thean-investment.vercel.app — bấm **"Dùng tài khoản demo"** ở trang đăng nhập (hoặc mở thẳng [/dang-nhap?demo=1](https://thean-investment.vercel.app/dang-nhap?demo=1)).
+
 > ⚠️ Toàn bộ dữ liệu là **dữ liệu mô phỏng** dùng để trình diễn giao diện, không phải khuyến nghị đầu tư. Tên công ty chứng khoán và nguồn tin trong ứng dụng đều là tên hư cấu.
 
 ![Trang Tổng quan](docs/screenshots/02-home.jpg)
